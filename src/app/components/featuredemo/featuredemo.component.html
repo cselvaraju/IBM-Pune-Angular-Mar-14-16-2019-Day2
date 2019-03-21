@@ -1,0 +1,27 @@
+<div>
+  <h5>This is the Feature Demo component</h5>
+  <button (click)="btnClicked($event)">Click Me</button>
+  <p></p>
+  <label [ngClass]="myStyle">
+      <input type="checkbox"
+          (click)="checked($event)">
+      Get Milk from booth
+  </label>
+
+  <p></p>
+  <button (click)="toggleList()">Toggle List</button>
+  <div *ngIf="listFlag">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+
+  <p></p>
+  <label>
+    Message: <input type="text" [(ngModel)]="message">
+  </label>
+  <br><br>
+  Your message is: {{message}}
+</div>
